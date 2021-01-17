@@ -127,6 +127,9 @@
 						<execution>
 							<id>generate-test-report</id>
 							<phase>test</phase>
+							<goals>
+								<goal>mutationCoverage</goal>
+							</goals>
 						</execution>
 					</executions>
 				</plugin>
