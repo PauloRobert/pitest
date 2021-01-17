@@ -1,7 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-negocio,br.com.alelo.negocio,IdadeNaoPermitidaException,7,0,0,0,3,0,2,0,2,0
-negocio,br.com.alelo.negocio,Cliente,101,0,2,0,28,0,15,0,14,0
-negocio,br.com.alelo.negocio,GerenciadoraClientes,112,0,18,0,32,0,17,0,8,0
-negocio,br.com.alelo.negocio,Main,225,0,16,0,75,0,15,0,5,0
-negocio,br.com.alelo.negocio,GerenciadoraContas,69,50,11,3,19,14,10,4,4,3
-negocio,br.com.alelo.negocio,ContaCorrente,39,22,2,0,7,9,5,4,4,4
