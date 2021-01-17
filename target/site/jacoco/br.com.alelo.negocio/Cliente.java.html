@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cliente.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">negocio</a> &gt; <a href="index.source.html" class="el_package">br.com.alelo.negocio</a> &gt; <span class="el_source">Cliente.java</span></div><h1>Cliente.java</h1><pre class="source lang-java linenums">package br.com.alelo.negocio;
+
+
+/**
+ * Classe {@link Cliente} que representa um cliente real do banco.
+ * 
+ * @author Gustavo Farias
+ */
+public class Cliente {
+
+	private int id;
+
+	private String nome;
+
+	private int idade;
+
+	private String email;
+
+	private boolean ativo;
+
+	private int idContaCorrente;
+
+<span class="nc" id="L23">	public Cliente(int id, String nome, int idade, String email, int idContaCorrente, boolean ativo) {</span>
+<span class="nc" id="L24">		this.id = id;</span>
+<span class="nc" id="L25">		this.nome = nome;</span>
+<span class="nc" id="L26">		this.idade = idade;</span>
+<span class="nc" id="L27">		this.email = email;</span>
+<span class="nc" id="L28">		this.idContaCorrente = idContaCorrente;</span>
+<span class="nc" id="L29">		this.ativo = ativo;</span>
+<span class="nc" id="L30">	}</span>
+
+	/**
+	 * Método que retorna o ID do cliente.
+	 * 
+	 * @return ID do cliente
+	 */
+	public int getId() {
+<span class="nc" id="L38">		return id;</span>
+	}
+
+	/**
+	 * Método que atualiza o ID do cliente.
+	 */
+	public void setId(int id) {
+<span class="nc" id="L45">		this.id = id;</span>
+<span class="nc" id="L46">	}</span>
+
+	/**
+	 * Método que retorna o nome do cliente.
+	 * 
+	 * @return nome do cliente
+	 */
+	public String getNome() {
+<span class="nc" id="L54">		return nome;</span>
+	}
+
+	/**
+	 * Método que atualiza o nome do cliente.
+	 */
+	public void setNome(String nome) {
+<span class="nc" id="L61">		this.nome = nome;</span>
+<span class="nc" id="L62">	}</span>
+
+	/**
+	 * Método que retorna a idade do cliente.
+	 * 
+	 * @return idade do cliente
+	 */
+	public int getIdade() {
+<span class="nc" id="L70">		return idade;</span>
+	}
+
+	/**
+	 * Método que atualiza a idade do cliente.
+	 */
+	public void setIdade(int idade) {
+<span class="nc" id="L77">		this.idade = idade;</span>
+<span class="nc" id="L78">	}</span>
+
+	/**
+	 * Método que retorna o email do cliente.
+	 * 
+	 * @return email do cliente
+	 */
+	public String getEmail() {
+<span class="nc" id="L86">		return email;</span>
+	}
+
+	/**
+	 * Método que atualiza o email do cliente.
+	 */
+	public void setEmail(String email) {
+<span class="nc" id="L93">		this.email = email;</span>
+<span class="nc" id="L94">	}</span>
+
+	/**
+	 * Método que retorna o status (Ativo ou Inativo) do cliente.
+	 * 
+	 * @return status do cliente
+	 */
+	public boolean isAtivo() {
+<span class="nc" id="L102">		return ativo;</span>
+	}
+
+	/**
+	 * Método que atualiza o status do cliente.
+	 */
+	public void setAtivo(boolean ativo) {
+<span class="nc" id="L109">		this.ativo = ativo;</span>
+<span class="nc" id="L110">	}</span>
+
+	/**
+	 * Método que retorna o ID da conta corrente associada ao cliente.
+	 * 
+	 * @return ID da conta corrente associada ao cliente
+	 */
+	public int getIdContaCorrente() {
+<span class="nc" id="L118">		return this.idContaCorrente;</span>
+	}
+
+	/**
+	 * Método que atualiza o ID da conta corrente associada ao cliente.
+	 */
+	public void setIdContaCorrente(int idContaCorrente) {
+<span class="nc" id="L125">		this.idContaCorrente = idContaCorrente;</span>
+<span class="nc" id="L126">	}</span>
+
+	/**
+	 * Método que retorna a representação textual de um cliente.
+	 * 
+	 * @return representação textual de um cliente
+	 */
+	@Override
+	public String toString() {
+
+<span class="nc bnc" id="L136" title="All 2 branches missed.">		String str = &quot;=========================&quot; + &quot;Id: &quot; + this.id + &quot;\n&quot; + &quot;Nome: &quot; + this.nome + &quot;\n&quot; + &quot;Email: &quot;</span>
+				+ this.email + &quot;\n&quot; + &quot;Idade: &quot; + this.idade + &quot;\n&quot; + &quot;Status: &quot; + (ativo ? &quot;Ativo&quot; : &quot;Inativo&quot;) + &quot;\n&quot;
+				+ &quot;=========================&quot;;
+<span class="nc" id="L139">		return str;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

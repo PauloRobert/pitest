@@ -1,0 +1,6 @@
+br\com\alelo\negocio\GerenciadoraClientes.class
+br\com\alelo\negocio\IdadeNaoPermitidaException.class
+br\com\alelo\negocio\Main.class
+br\com\alelo\negocio\Cliente.class
+br\com\alelo\negocio\ContaCorrente.class
+br\com\alelo\negocio\GerenciadoraContas.class
